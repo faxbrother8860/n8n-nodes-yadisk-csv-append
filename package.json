@@ -2,7 +2,9 @@
   "name": "@your-scope/n8n-nodes-yadisk-csv-append",
   "version": "0.1.0",
   "description": "n8n node to append rows into CSV stored on Yandex.Disk (Append Row analogue)",
-  "keywords": ["n8n-community-node-package"],
+  "keywords": [
+    "n8n-community-node-package"
+  ],
   "author": "you",
   "license": "MIT",
   "type": "module",
@@ -11,8 +13,12 @@
     "./credentials": "./dist/credentials/YandexDiskAccessToken.credentials.js"
   },
   "n8n": {
-    "nodes": ["dist/nodes/YandexDiskCsvAppend.node.js"],
-    "credentials": ["dist/credentials/YandexDiskAccessToken.credentials.js"]
+    "nodes": [
+      "dist/nodes/YandexDiskCsvAppend.node.js"
+    ],
+    "credentials": [
+      "dist/credentials/YandexDiskAccessToken.credentials.js"
+    ]
   },
   "scripts": {
     "build": "tsc",
@@ -25,8 +31,8 @@
   "devDependencies": {
     "@types/node": "^20.12.12",
     "eslint": "^8.57.0",
-    "n8n-core": "^1.65.0",
-    "n8n-workflow": "^1.65.0",
+    "n8n-core": "^1.14.1",
+    "n8n-workflow": "^1.17.0",
     "typescript": "^5.4.5"
   }
 }
